@@ -1,1 +1,1 @@
-sudo docker run -ti  --gpus all -v $(pwd):/evolveGCN  gcn_env:latest
+sudo docker run -ti --ipc=host --gpus all -v $(pwd):/evolveGCN  gcn_env:latest
