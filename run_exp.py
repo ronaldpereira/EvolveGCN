@@ -6,6 +6,7 @@ import time
 import random
 
 #datasets
+import amlsim as aml
 import bitcoin_dl as bc
 import elliptic_temporal_dl as ell_temp
 import uc_irv_mess_dl as ucim
@@ -92,8 +93,8 @@ def build_dataset(args):
 		elif args.data == 'bitcoinalpha':
 			args.bitcoin_args = args.bitcoinalpha_args
 		return bc.bitcoin_dataset(args)
-	elif args.data == 'aml_sim':
-		return aml.Aml_Dataset(args)
+	elif args.data == 'amlsim':
+		return aml.AMLDataset(args)
 	elif args.data == 'elliptic':
 		return ell.Elliptic_Dataset(args)
 	elif args.data == 'elliptic_temporal':
