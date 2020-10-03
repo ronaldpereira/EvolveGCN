@@ -21,7 +21,7 @@ save_node_embeddings: False
 train_proportion: 0.8
 dev_proportion: 0.1
 
-num_epochs: 1000 #number of passes though the data
+num_epochs: 200 #number of passes though the data
 steps_accum_gradients: 1
 learning_rate: 0.001
 learning_rate_min: 0.0001
